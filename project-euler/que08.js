@@ -3,16 +3,17 @@ let num = "731671765313306249192251196744265747423553491949349698352031277450632
 let arr = num.split('');
 // console.log(arr);
 let largest = 0;
-for (let i = 0; i <= arr.length; i++){
+for (let i = 0; i <= arr.length; i++) {
     // if (arr[i] * arr[i+1] * arr[i+2] * arr[i+3] * arr[i+4] * arr[i+5] * arr[i+6] * arr[i+7] * arr[i+8] * arr[i+9] * arr[i+10] * arr[i+11] * arr[i+12] > largest ){
     //     largest = arr[i] * arr[i+1] * arr[i+2] * arr[i+3] * arr[i+4] * arr[i+5] * arr[i+6] * arr[i+7] * arr[i+8] * arr[i+9] * arr[i+10] * arr[i+11] * arr[i+12];
     // }
     let number = 1;
-    for (let j = i + 1; j <= i + 4; j++){
+    for (let j = i + 1; j <= i + 4; j++) {
         number = number * arr[j];
-        if(number > largest){
+        if (number > largest) {
             largest = number;
         }
     }
 }
+
 console.log(largest);
